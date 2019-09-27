@@ -3,19 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE76616233CE2B200091065 /* AddImageHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE76615233CE2B200091065 /* AddImageHandlers.swift */; };
+		0CE76618233D0A6E00091065 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CE76617233D0A6E00091065 /* GoogleService-Info.plist */; };
 		0CFC6555233B90AB003C5411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6554233B90AB003C5411 /* AppDelegate.swift */; };
 		0CFC6557233B90AB003C5411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6556233B90AB003C5411 /* ViewController.swift */; };
 		0CFC655A233B90AB003C5411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC6558233B90AB003C5411 /* Main.storyboard */; };
 		0CFC655D233B90AB003C5411 /* trollFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC655B233B90AB003C5411 /* trollFeed.xcdatamodeld */; };
 		0CFC655F233B90AD003C5411 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC655E233B90AD003C5411 /* Assets.xcassets */; };
 		0CFC6562233B90AD003C5411 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC6560233B90AD003C5411 /* LaunchScreen.storyboard */; };
+		0CFC6570233B99EE003C5411 /* CustomFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC656F233B99EE003C5411 /* CustomFeedCell.swift */; };
+		0CFC6572233B9CF3003C5411 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFC6571233B9CF3003C5411 /* FeedCell.xib */; };
+		0CFC6574233BF1A3003C5411 /* AddImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6573233BF1A3003C5411 /* AddImageViewController.swift */; };
+		0CFC6576233BFB96003C5411 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6575233BFB96003C5411 /* LoginViewController.swift */; };
+		0CFC6578233C1276003C5411 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6577233C1276003C5411 /* RegisterViewController.swift */; };
+		0CFC657A233C1E34003C5411 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6579233C1E34003C5411 /* UserProfileViewController.swift */; };
+		0CFC657C233C206C003C5411 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC657B233C206C003C5411 /* RandomViewController.swift */; };
+		10AAB451D3ABD82C9FC448DD /* Pods_trollFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A850E8E7F8175F50EDB1DD9F /* Pods_trollFeed.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE76615233CE2B200091065 /* AddImageHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageHandlers.swift; sourceTree = "<group>"; };
+		0CE76617233D0A6E00091065 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CFC6551233B90AB003C5411 /* trollFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trollFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFC6554233B90AB003C5411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CFC6556233B90AB003C5411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +36,16 @@
 		0CFC655E233B90AD003C5411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CFC6561233B90AD003C5411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CFC6563233B90AD003C5411 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFC656F233B99EE003C5411 /* CustomFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeedCell.swift; sourceTree = "<group>"; };
+		0CFC6571233B9CF3003C5411 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		0CFC6573233BF1A3003C5411 /* AddImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageViewController.swift; sourceTree = "<group>"; };
+		0CFC6575233BFB96003C5411 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CFC6577233C1276003C5411 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0CFC6579233C1E34003C5411 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		0CFC657B233C206C003C5411 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		310CD784800C4DE8750982CF /* Pods-trollFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trollFeed.debug.xcconfig"; path = "Target Support Files/Pods-trollFeed/Pods-trollFeed.debug.xcconfig"; sourceTree = "<group>"; };
+		A850E8E7F8175F50EDB1DD9F /* Pods_trollFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_trollFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE158CEF2D388767DCFB9EE /* Pods-trollFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-trollFeed.release.xcconfig"; path = "Target Support Files/Pods-trollFeed/Pods-trollFeed.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AAB451D3ABD82C9FC448DD /* Pods_trollFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE76619233DF07000091065 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC6554233B90AB003C5411 /* AppDelegate.swift */,
+				0CE76615233CE2B200091065 /* AddImageHandlers.swift */,
+				0CFC6573233BF1A3003C5411 /* AddImageViewController.swift */,
+				0CFC6556233B90AB003C5411 /* ViewController.swift */,
+				0CFC6577233C1276003C5411 /* RegisterViewController.swift */,
+				0CFC6579233C1E34003C5411 /* UserProfileViewController.swift */,
+				0CFC6575233BFB96003C5411 /* LoginViewController.swift */,
+				0CFC657B233C206C003C5411 /* RandomViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0CE7661B233DF0B500091065 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC6558233B90AB003C5411 /* Main.storyboard */,
+				0CFC6560233B90AD003C5411 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0CFC6548233B90AB003C5411 = {
 			isa = PBXGroup;
 			children = (
 				0CFC6553233B90AB003C5411 /* trollFeed */,
 				0CFC6552233B90AB003C5411 /* Products */,
+				4A26C2E81E852E51DEDCFF39 /* Pods */,
+				F518ABD24909A9CA65E0320E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +105,41 @@
 		0CFC6553233B90AB003C5411 /* trollFeed */ = {
 			isa = PBXGroup;
 			children = (
-				0CFC6554233B90AB003C5411 /* AppDelegate.swift */,
-				0CFC6556233B90AB003C5411 /* ViewController.swift */,
-				0CFC6558233B90AB003C5411 /* Main.storyboard */,
+				0CE7661B233DF0B500091065 /* View */,
+				0CFC656A233B970A003C5411 /* CustomFeedCell */,
+				0CE76619233DF07000091065 /* Controller */,
 				0CFC655E233B90AD003C5411 /* Assets.xcassets */,
-				0CFC6560233B90AD003C5411 /* LaunchScreen.storyboard */,
-				0CFC6563233B90AD003C5411 /* Info.plist */,
 				0CFC655B233B90AB003C5411 /* trollFeed.xcdatamodeld */,
+				0CE76617233D0A6E00091065 /* GoogleService-Info.plist */,
+				0CFC6563233B90AD003C5411 /* Info.plist */,
 			);
 			path = trollFeed;
+			sourceTree = "<group>";
+		};
+		0CFC656A233B970A003C5411 /* CustomFeedCell */ = {
+			isa = PBXGroup;
+			children = (
+				0CFC656F233B99EE003C5411 /* CustomFeedCell.swift */,
+				0CFC6571233B9CF3003C5411 /* FeedCell.xib */,
+			);
+			path = CustomFeedCell;
+			sourceTree = "<group>";
+		};
+		4A26C2E81E852E51DEDCFF39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				310CD784800C4DE8750982CF /* Pods-trollFeed.debug.xcconfig */,
+				ABE158CEF2D388767DCFB9EE /* Pods-trollFeed.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F518ABD24909A9CA65E0320E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A850E8E7F8175F50EDB1DD9F /* Pods_trollFeed.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CFC6566233B90AD003C5411 /* Build configuration list for PBXNativeTarget "trollFeed" */;
 			buildPhases = (
+				69EF186B9CA82BA4F1063CBF /* [CP] Check Pods Manifest.lock */,
 				0CFC654D233B90AB003C5411 /* Sources */,
 				0CFC654E233B90AB003C5411 /* Frameworks */,
 				0CFC654F233B90AB003C5411 /* Resources */,
+				C51A6CC34BD7DF7CD76C5777 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFC6562233B90AD003C5411 /* LaunchScreen.storyboard in Resources */,
+				0CFC6572233B9CF3003C5411 /* FeedCell.xib in Resources */,
+				0CE76618233D0A6E00091065 /* GoogleService-Info.plist in Resources */,
 				0CFC655F233B90AD003C5411 /* Assets.xcassets in Resources */,
 				0CFC655A233B90AB003C5411 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +212,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69EF186B9CA82BA4F1063CBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-trollFeed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51A6CC34BD7DF7CD76C5777 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trollFeed/Pods-trollFeed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-trollFeed/Pods-trollFeed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-trollFeed/Pods-trollFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CFC654D233B90AB003C5411 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE76616233CE2B200091065 /* AddImageHandlers.swift in Sources */,
+				0CFC6576233BFB96003C5411 /* LoginViewController.swift in Sources */,
+				0CFC657A233C1E34003C5411 /* UserProfileViewController.swift in Sources */,
 				0CFC655D233B90AB003C5411 /* trollFeed.xcdatamodeld in Sources */,
+				0CFC657C233C206C003C5411 /* RandomViewController.swift in Sources */,
 				0CFC6557233B90AB003C5411 /* ViewController.swift in Sources */,
+				0CFC6570233B99EE003C5411 /* CustomFeedCell.swift in Sources */,
+				0CFC6574233BF1A3003C5411 /* AddImageViewController.swift in Sources */,
 				0CFC6555233B90AB003C5411 /* AppDelegate.swift in Sources */,
+				0CFC6578233C1276003C5411 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +412,7 @@
 		};
 		0CFC6567233B90AD003C5411 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310CD784800C4DE8750982CF /* Pods-trollFeed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +431,7 @@
 		};
 		0CFC6568233B90AD003C5411 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE158CEF2D388767DCFB9EE /* Pods-trollFeed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
