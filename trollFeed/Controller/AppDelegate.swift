@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseStorage
 
 @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,9 +19,9 @@ import Firebase
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-                    FirebaseApp.configure()
-
         
+        FirebaseApp.configure()
+
         return true
     }
 

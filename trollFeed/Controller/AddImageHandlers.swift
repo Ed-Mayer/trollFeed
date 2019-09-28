@@ -8,9 +8,13 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseStorage
+
 
 extension AddImageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate   {
     
+
     func handleSelectDeviceUpload() {
         
         let picker = UIImagePickerController()
@@ -35,7 +39,8 @@ extension AddImageViewController: UIImagePickerControllerDelegate, UINavigationC
         if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage? {
             imagePicked = originalImage
             }
-            
+        
+        
         if imagePicked != nil {
             uploadedImageView.image = imagePicked
             uploadedURL.isUserInteractionEnabled = false

@@ -14,7 +14,7 @@ class RandomViewController: UIViewController {
     @IBOutlet weak var profileButton: UIImageView!
     @IBAction func backButton(_ sender: Any) {
         
-        performSegue(withIdentifier: "backFromRandomSegue", sender: self)
+            dismiss(animated: true, completion: nil)
     }
     
 
