@@ -167,12 +167,28 @@
                                 <color key="textColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzm-fr-N0r">
+                                <rect key="frame" x="330" y="0.0" width="84" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="iYP-SB-WJB"/>
+                                    <constraint firstAttribute="height" constant="40" id="xI8-5x-mqR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="b20-nw-h44" eventType="touchUpInside" id="IKE-sd-xO3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.55807820429999999" green="0.1052841808" blue="0.000107291783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="fyK-Ah-YdY" secondAttribute="bottom" id="6Xo-pf-Ur8"/>
+                            <constraint firstItem="gzm-fr-N0r" firstAttribute="top" secondItem="ChJ-8m-hkO" secondAttribute="top" id="6dK-jC-A4j"/>
                             <constraint firstItem="YnB-ul-tp5" firstAttribute="top" secondItem="L30-2G-Fie" secondAttribute="bottom" constant="8" id="81p-9y-9I6"/>
                             <constraint firstItem="fyK-Ah-YdY" firstAttribute="top" secondItem="iac-4i-Arl" secondAttribute="bottom" constant="8" id="BAa-jP-jMC"/>
+                            <constraint firstItem="gzm-fr-N0r" firstAttribute="trailing" secondItem="ChJ-8m-hkO" secondAttribute="trailing" id="FmF-ET-4VF"/>
                             <constraint firstItem="YnB-ul-tp5" firstAttribute="leading" secondItem="ChJ-8m-hkO" secondAttribute="leading" constant="20" id="O9R-yQ-F1C"/>
                             <constraint firstItem="L30-2G-Fie" firstAttribute="top" secondItem="ChJ-8m-hkO" secondAttribute="top" id="OAa-eJ-4gg"/>
                             <constraint firstItem="9cB-eU-KnO" firstAttribute="top" secondItem="ChJ-8m-hkO" secondAttribute="top" id="kra-tL-mJY"/>
@@ -185,10 +201,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ChJ-8m-hkO"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ryp-xg-Ncs"/>
+                    <connections>
+                        <outlet property="helloUser" destination="YnB-ul-tp5" id="1nN-aP-NCP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWq-LC-VuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2855" y="-478"/>
+            <point key="canvasLocation" x="2853.6231884057975" y="-478.53260869565219"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="mzC-af-V7q">
@@ -312,6 +332,7 @@
                         <outlet property="loginTextField" destination="tGV-H7-rFF" id="Hdf-mW-8Sb"/>
                         <outlet property="passwordTextField" destination="t5N-Tq-Zjx" id="QqE-tP-YOV"/>
                         <segue destination="zxL-O2-KSR" kind="show" identifier="registerSegue" id="v3h-Jb-86Q"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="loggedin" id="WKV-O7-fND"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1T-Vj-E8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -545,7 +566,7 @@
                                 </constraints>
                                 <state key="normal" image="user.png"/>
                                 <connections>
-                                    <segue destination="e9K-ft-N34" kind="show" id="Z7H-24-8Ob"/>
+                                    <action selector="profileButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id6-lH-aVc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdH-ob-0to">
@@ -595,6 +616,8 @@
                         <outlet property="mainFeed" destination="n4g-lc-k4s" id="5wz-cr-X6l"/>
                         <segue destination="V49-4X-imf" kind="show" identifier="addNewImageSegue" id="qeR-bm-zI1"/>
                         <segue destination="KHG-15-7vE" kind="show" identifier="postSegue" id="lWu-Pe-1v1"/>
+                        <segue destination="b20-nw-h44" kind="show" identifier="goToProfile" id="22N-3w-IBR"/>
+                        <segue destination="e9K-ft-N34" kind="show" identifier="goToLogin" id="0tW-t8-thZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -752,6 +775,7 @@
         <image name="user.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YtA-Ma-qU8"/>
+        <segue reference="WKV-O7-fND"/>
+        <segue reference="0tW-t8-thZ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,8 +12,14 @@ import FirebaseStorage
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-
-// MAIN
+    
+    @IBAction func profileButtonPressed(_ sender: Any) {
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "goToProfile", sender: self)
+        }
+            performSegue(withIdentifier: "goToLogin", sender: self)
+    }
+    // MAIN
    
     @IBAction func addButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "addNewImageSegue", sender: self)

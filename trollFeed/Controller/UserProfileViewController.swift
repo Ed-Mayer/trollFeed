@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
+import Firebase
 class UserProfileViewController: UIViewController {
 
+  
+    @IBOutlet weak var helloUser: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        helloUser.text = "Hello, \(Auth.auth().currentUser?.email ?? "User")"
         // Do any additional setup after loading the view.
     }
     
@@ -22,6 +25,25 @@ class UserProfileViewController: UIViewController {
 
     }
     
+    
+    @IBAction func logoutButtonPressed(_ sender: Any) {
+               
+      do {
+        try Auth.auth().signOut()
+       } catch {
+        print("Error during signing out")
+        }
+        
+        
+        dismiss(animated: true, completion: nil)
+
+     }
+    
+      
+
+
+
+}
     /*
     // MARK: - Navigation
 
@@ -32,4 +54,3 @@ class UserProfileViewController: UIViewController {
     }
     */
 
-}
