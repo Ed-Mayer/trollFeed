@@ -8,16 +8,17 @@
 
 import UIKit
 import Firebase
+import ReCaptcha
 
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+     
         // Do any additional setup after loading the view.
     }
     
@@ -29,6 +30,8 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: Any) {
+        
+     
         
         Auth.auth().createUser(withEmail: loginTextField.text!, password: passwordTextfield.text!) { (user, error) in
             if error != nil {

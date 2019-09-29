@@ -10,14 +10,18 @@ import UIKit
 import Firebase
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+    
+     
         // Do any additional setup after loading the view.
     }
     
-    @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBAction func loginButton(_ sender: Any) {
         
             Auth.auth().signIn(withEmail: loginTextField.text!, password: passwordTextField.text!) { (user, error) in

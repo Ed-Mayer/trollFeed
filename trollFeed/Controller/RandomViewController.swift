@@ -36,8 +36,7 @@ class RandomViewController: UIViewController {
         
         tapGestureRecognizer.view as! UIImageView
         
-        performSegue(withIdentifier: "goProfileSegue", sender: self)
-        print("Siema1")
+        checkIfLoggedIn(segueIfLogged: "goToProfile", segueIfNotLogged: "goToLogin")
     }
     
 

@@ -14,15 +14,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     @IBAction func profileButtonPressed(_ sender: Any) {
-        if Auth.auth().currentUser != nil {
-            performSegue(withIdentifier: "goToProfile", sender: self)
-        }
-            performSegue(withIdentifier: "goToLogin", sender: self)
+
+        checkIfLoggedIn(segueIfLogged: "goToProfile", segueIfNotLogged: "goToLogin")
     }
-    // MAIN
+    
+    // SEGUE TO ADD NEW IMAGE VC
    
     @IBAction func addButtonPressed(_ sender: Any) {
+        
+        if Auth.auth().currentUser != nil {
         performSegue(withIdentifier: "addNewImageSegue", sender: self)
+        }
+        else {
+            let alert = UIAlertController(title: "You are not yet registered.", message: "It takes 10 seconds", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "Register", style: UIAlertAction.Style.default) {
+                UIAlertAction in
+                self.performSegue(withIdentifier: "goToProfile", sender: self)
+            }
+            alert.addAction(okAction)
+
+            self.present(alert, animated: true)
+        }
+        
     }
     
     @IBOutlet weak var mainFeed: UITableView!
@@ -46,7 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     
-//  ILOŚĆ KOMÓREK FEEDCELL, DOCELOWO MA ZWRACAĆ WIELKOŚĆ BAZY DANYCH (EWENTUALNIE STRONY, WTEDY ZWRACA ILOŚĆ KOMÓREK NA STRONIE NP. 10 
+//  FEEDCELL NUMBER OF ROWS - SIZE OF DB ALL OF USERS + ADMIN UPLOADS
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10

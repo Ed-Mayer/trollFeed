@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C438957233FFB0E00BB78F2 /* Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C438956233FFB0E00BB78F2 /* Methods.swift */; };
 		0CE76616233CE2B200091065 /* AddImageHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE76615233CE2B200091065 /* AddImageHandlers.swift */; };
 		0CE76618233D0A6E00091065 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CE76617233D0A6E00091065 /* GoogleService-Info.plist */; };
 		0CFC6555233B90AB003C5411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC6554233B90AB003C5411 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C438956233FFB0E00BB78F2 /* Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Methods.swift; sourceTree = "<group>"; };
 		0CE76615233CE2B200091065 /* AddImageHandlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddImageHandlers.swift; sourceTree = "<group>"; };
 		0CE76617233D0A6E00091065 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CFC6551233B90AB003C5411 /* trollFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = trollFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				0CE76615233CE2B200091065 /* AddImageHandlers.swift */,
 				0CFC6573233BF1A3003C5411 /* AddImageViewController.swift */,
 				0CFC6556233B90AB003C5411 /* ViewController.swift */,
+				0C438956233FFB0E00BB78F2 /* Methods.swift */,
 				0CFC6577233C1276003C5411 /* RegisterViewController.swift */,
 				0CFC6579233C1E34003C5411 /* UserProfileViewController.swift */,
 				0CFC6575233BFB96003C5411 /* LoginViewController.swift */,
@@ -266,6 +269,7 @@
 				0CFC657C233C206C003C5411 /* RandomViewController.swift in Sources */,
 				0CFC6557233B90AB003C5411 /* ViewController.swift in Sources */,
 				0CFC6570233B99EE003C5411 /* CustomFeedCell.swift in Sources */,
+				0C438957233FFB0E00BB78F2 /* Methods.swift in Sources */,
 				0CFC6574233BF1A3003C5411 /* AddImageViewController.swift in Sources */,
 				0CFC6555233B90AB003C5411 /* AppDelegate.swift in Sources */,
 				0CFC6578233C1276003C5411 /* RegisterViewController.swift in Sources */,

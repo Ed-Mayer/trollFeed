@@ -119,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Had-8T-II1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047.826086956522" y="-478.53260869565219"/>
+            <point key="canvasLocation" x="-659" y="-479"/>
         </scene>
         <!--User Profile View Controller-->
         <scene sceneID="bBq-UJ-sNu">
@@ -208,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWq-LC-VuP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2853.6231884057975" y="-478.53260869565219"/>
+            <point key="canvasLocation" x="941" y="1007"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="mzC-af-V7q">
@@ -333,11 +333,12 @@
                         <outlet property="passwordTextField" destination="t5N-Tq-Zjx" id="QqE-tP-YOV"/>
                         <segue destination="zxL-O2-KSR" kind="show" identifier="registerSegue" id="v3h-Jb-86Q"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="loggedin" id="WKV-O7-fND"/>
+                        <segue destination="b20-nw-h44" kind="show" identifier="loginToProfil" id="iHy-s0-75D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V1T-Vj-E8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295.6521739130435" y="-477.71739130434787"/>
+            <point key="canvasLocation" x="942" y="-479"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kuT-XI-j1I">
@@ -432,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UA0-3y-UVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1295.2" y="255.02248875562222"/>
+            <point key="canvasLocation" x="-659" y="1007"/>
         </scene>
         <!--Random View Controller-->
         <scene sceneID="0X4-pA-gjX">
@@ -525,12 +526,13 @@
                     <navigationItem key="navigationItem" id="5yJ-bF-Vez"/>
                     <connections>
                         <outlet property="profileButton" destination="sJ8-aK-dnB" id="ist-wI-8wm"/>
-                        <segue destination="e9K-ft-N34" kind="show" identifier="goProfileSegue" id="YtA-Ma-qU8"/>
+                        <segue destination="e9K-ft-N34" kind="show" identifier="goToLogin" id="YtA-Ma-qU8"/>
+                        <segue destination="b20-nw-h44" kind="show" identifier="goToProfile" id="WPg-Op-4Il"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="esN-qI-QaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1000" y="256"/>
+            <point key="canvasLocation" x="174" y="1007"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -632,13 +634,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="8DQ-pQ-qtL">
-                                <rect key="frame" x="374" y="0.0" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="YGt-4O-QsL"/>
-                                    <constraint firstAttribute="height" constant="40" id="Yc2-EF-xDT"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="trollFeed" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPr-O9-M0Y">
                                 <rect key="frame" x="112" y="0.0" width="190" height="40"/>
                                 <constraints>
@@ -734,8 +729,6 @@
                         <constraints>
                             <constraint firstItem="Wmy-i3-3sP" firstAttribute="centerX" secondItem="nVM-j3-fE4" secondAttribute="centerX" id="04D-ZT-3sK"/>
                             <constraint firstItem="M0f-bl-n3w" firstAttribute="centerX" secondItem="nVM-j3-fE4" secondAttribute="centerX" id="0ge-r1-aU6"/>
-                            <constraint firstItem="8DQ-pQ-qtL" firstAttribute="trailing" secondItem="1ef-MD-SD2" secondAttribute="trailing" id="0l3-Yp-qVV"/>
-                            <constraint firstItem="8DQ-pQ-qtL" firstAttribute="top" secondItem="1ef-MD-SD2" secondAttribute="top" id="6Gy-6M-i5m"/>
                             <constraint firstItem="JPr-O9-M0Y" firstAttribute="centerX" secondItem="nVM-j3-fE4" secondAttribute="centerX" id="Bop-xA-Rkw"/>
                             <constraint firstItem="L0p-ET-6uM" firstAttribute="top" secondItem="1ef-MD-SD2" secondAttribute="top" id="C1e-2c-U6b"/>
                             <constraint firstItem="r6Q-Ci-gON" firstAttribute="centerX" secondItem="nVM-j3-fE4" secondAttribute="centerX" id="CoW-Uj-AlX"/>
@@ -759,12 +752,11 @@
                         <outlet property="titleTextField" destination="pAW-dA-9Q0" id="0O2-IO-HBM"/>
                         <outlet property="uploadedImageView" destination="d7y-ab-7jh" id="flk-9D-yBu"/>
                         <outlet property="uploadedURL" destination="Wmy-i3-3sP" id="hQH-RU-zoa"/>
-                        <segue destination="e9K-ft-N34" kind="show" identifier="profileSegue" id="uUt-s8-nWU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2DW-eP-8ie" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1000" y="-477"/>
+            <point key="canvasLocation" x="941" y="256"/>
         </scene>
     </scenes>
     <resources>
@@ -776,6 +768,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WKV-O7-fND"/>
-        <segue reference="0tW-t8-thZ"/>
+        <segue reference="YtA-Ma-qU8"/>
+        <segue reference="iHy-s0-75D"/>
     </inferredMetricsTieBreakers>
 </document>
