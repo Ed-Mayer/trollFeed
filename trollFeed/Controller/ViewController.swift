@@ -25,12 +25,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if Auth.auth().currentUser != nil {
         performSegue(withIdentifier: "addNewImageSegue", sender: self)
         }
-        else {
+        else if Auth.auth().currentUser == nil{
             let alert = UIAlertController(title: "You are not yet registered.", message: "It takes 10 seconds", preferredStyle: .alert)
             
             let okAction = UIAlertAction(title: "Register", style: UIAlertAction.Style.default) {
                 UIAlertAction in
-                self.performSegue(withIdentifier: "goToProfile", sender: self)
+                self.performSegue(withIdentifier: "goToRegister", sender: self)
             }
             alert.addAction(okAction)
 

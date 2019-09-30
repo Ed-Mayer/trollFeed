@@ -15,7 +15,6 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
 
         helloUser.text = "Hello, \(Auth.auth().currentUser?.email ?? "User")"
         // Do any additional setup after loading the view.

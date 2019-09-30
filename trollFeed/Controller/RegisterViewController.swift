@@ -8,7 +8,6 @@
 
 import UIKit
 import Firebase
-import ReCaptcha
 
 class RegisterViewController: UIViewController {
 
